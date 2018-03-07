@@ -1,1 +1,111 @@
 /* You can add global styles to this file, and also import other style files */
+/*global back ground color is #000000*/
+html, body, .gvcBgColor, .popUpContainer, .btn-secondary, input:checked + .slider{
+    background-color: #000000 !important;
+    color: #4F4F4F;
+    font-size: 12px;
+}
+.gvcSubHeaderBg, .popUpHeader,.btn-primary{
+    background-color: #222222 !important;
+    border-color: #222222 !important;
+}
+.borderColor, .btn-primary{
+    border-color:#4F4F4F !important; 
+}
+.popUpCloseIconColor{
+    color: #676666;
+    font-size: 28px;
+    padding: 0;
+}
+.popUpCloseBtn{
+    float: right;
+}
+.popUpContainer{
+    position: absolute;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+}
+.popUpHeader{
+    height: 5.5rem;
+    min-height: 5.5rem !important;
+}
+.margin-bottom{
+    margin-bottom: 0 !important;
+}
+.no-btn{
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-right: 1rem;
+}
+.btn-secondary{
+    color: #555555;
+}
+.btn-primary{
+    color: #4F4F4F !important;
+}
+.btn{
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #696969;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+  }
+  
+  .switch input {display:none;}
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 1px;
+    bottom: 1px;
+    background-color: transparent;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider:before{
+    background-color: #696969;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+    border: 1px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+    border: 1px solid;
+    border-color:#4F4F4F !important; 
+  }
+  .fontBold{
+      font-weight: bold;
+  }

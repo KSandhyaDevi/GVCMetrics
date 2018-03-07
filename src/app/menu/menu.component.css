@@ -1,0 +1,17 @@
+.menuBtnGrpMargin{
+    margin: 0 2rem;
+}
+.menubtnLineAlgn{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menupopUpContent{
+    margin-top: 1rem;
+}
+.menudataRefCon{
+    margin: 1rem;
+    border-radius: 5px;
+}
+.metrMargin{
+    margin: 1rem;
+}

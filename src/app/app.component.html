@@ -1,6 +1,18 @@
-
-<nav>
-  <a routerLink="/login">login</a>
+<nav class="navbar navbar-default gvcSubHeaderBg margin-bottom">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="btn btn-default  navbar-btn" aria-label="Left Align" [routerLink]="[{ outlets: { outlet: ['menu'] } }]">
+              <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default  navbar-btn" aria-label="center Align">
+              Today
+          </button>
+          <button type="button" class="btn btn-default  navbar-btn" aria-label="right Align">
+              <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+          </button>
+      </div>
+    </div>
 </nav>
 <router-outlet></router-outlet>
+<router-outlet name="outlet"></router-outlet>
 
