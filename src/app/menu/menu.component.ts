@@ -1,4 +1,4 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit, HostBinding, ViewEncapsulation } from '@angular/core';
 
 import { ROUND_ANTICLOCK_ANIMATION }   from '../animations/round-anticlock.animation';
 
@@ -7,6 +7,7 @@ import { ROUND_ANTICLOCK_ANIMATION }   from '../animations/round-anticlock.anima
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css'],
+  encapsulation: ViewEncapsulation.None,
   //styles: [ ':host { position: absolute; top: 20%; left: 5%; border: 3px solid black; }' ],
   animations: [ 
     ROUND_ANTICLOCK_ANIMATION

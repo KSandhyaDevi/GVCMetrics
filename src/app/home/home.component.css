@@ -1,6 +1,9 @@
 body{
-	background-color:#000;
+	background-color:#000!important;
 	color:#676767;
+}
+button, input, optgroup, select, textarea{
+    color:#676767
 }
 .header{
 	 background: #222222;

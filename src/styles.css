@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 /*global back ground color is #000000*/
 html, body, .gvcBgColor, .popUpContainer, .btn-secondary, input:checked + .slider{
-    background-color: #000000 !important;
-    color: #4F4F4F;
+    background-color: #000000;
     font-size: 12px;
 }
+
 .gvcSubHeaderBg, .popUpHeader,.btn-primary{
     background-color: #222222 !important;
     border-color: #222222 !important;
