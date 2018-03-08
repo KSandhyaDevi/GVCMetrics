@@ -1,0 +1,250 @@
+body{
+	background-color:#000;
+	color:#676767;
+}
+.header{
+	 background: #222222;
+}
+.navbar-custom .navbar-toggle .icon-bar{
+	background-color:#6c6b6b;
+	height:3px;
+}
+.navbar-custom .navbar-toggle .icon-bar:nth-child(4) {
+    width: 11px;
+}
+@media (min-width: 768px) {
+	.navbar-custom .navbar-header {
+		 float: none; 
+	}
+	.navbar-custom .navbar-toggle {
+		display:block;
+	}
+}
+
+
+.navbar-custom .navbar-toggle{
+	border:0;
+	margin-right:0;
+	float:left;
+	margin-left: 5px;
+}
+.navbar-custom .navbar {
+	margin-bottom: 10px;
+}
+.navbar-select-top{
+	display:inline-block;
+	padding:9px 10px;
+}
+/*  navbar-icons starts here */
+.navbar-icons {
+  text-align: center;
+}
+.navbar-icons .navbar-item {
+    width: auto;
+    display: inline-block;
+    padding: 0 11px;
+    margin: 0;
+    vertical-align: top;
+    text-decoration: none;
+    background: #222222;
+    box-sizing: border-box;
+	border-bottom:3px solid transparent;
+}
+.navbar-item.active{
+border-bottom-color: #dd7545;
+}
+.navbar-icons .navbar-item-icon {
+    width: 36px;
+    height: 36px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 36px;
+    display: block;
+    color: #6e6e6e;
+    background: transparent url(../../assets/images/navbar-icons.png) 0 0 no-repeat;
+	 background-size: 100%;
+}
+.navbar-icons .navbar-item-icon.gvc {
+    background-position: 0 0px;  
+}
+
+.navbar-icons .navbar-item-icon.bwin {
+    background-position: 0 -36px;
+}
+.navbar-icons .navbar-item-icon.casino {
+    background-position: 0 -72px;
+}
+.navbar-icons .navbar-item-icon.poker {
+    background-position: 0 -109px;
+}
+.navbar-icons .navbar-item-icon.bingo {
+    background-position: 0 -146px;
+}
+.navbar-icons .navbar-item:hover {
+  background: #181818;
+}
+/*
+.navbar-icons .navbar-item:active {
+  background:#000000;
+}
+
+.navbar-icons .navbar-label {
+  display: block;
+  margin-top: .75em;
+  font-weight: 400;
+  color: #6e6e6e;
+}
+*/
+
+@media (min-width: 600px) {
+	.navbar-icons .navbar-item-icon {
+    width: 72px;
+    height: 72px;
+	}
+    .navbar-icons .navbar-item-icon.gvc {
+		background-position: 0 0px;  
+	}
+
+	.navbar-icons .navbar-item-icon.bwin {
+		background-position: 0 -72px;
+	}
+	.navbar-icons .navbar-item-icon.casino {
+		background-position: 0 -146px;
+	}
+	.navbar-icons .navbar-item-icon.poker {
+		background-position: 0 -220px;
+	}
+	.navbar-icons .navbar-item-icon.bingo {
+		background-position: 0 -293px;
+	}
+	
+}
+/*  navbar-icons ends here */
+
+
+/*tabs styles starts here*/
+.custom-tabs {
+	margin-right:-15px;
+	margin-left:-15px;
+}
+.custom-tabs .tab-content {
+	padding:15px;
+	background-color: #222222;
+}
+.custom-tabs .tab-content.no-pr{
+	padding-right:0
+}
+.custom-tabs .nav-tabs {
+	padding-left:15px;
+	border-bottom:1px solid #454545;
+}
+.custom-tabs .nav > li > a {
+	padding:5px 15px 7px 15px;
+	color: #676767;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.custom-tabs .nav-tabs > li.active > a, 
+.custom-tabs .nav-tabs > li.active > a:hover, 
+.custom-tabs .nav-tabs > li.active > a:focus {
+	border: 1px solid #454545;
+	border-bottom-color: transparent;
+}
+.custom-tabs .nav-tabs>li.active > a, 
+.custom-tabs .nav-tabs>li.active > a:hover, 
+.custom-tabs .nav-tabs>li.active > a:focus {
+    color: #676767;
+    background-color: #222;
+}
+.custom-tabs .nav > li > a:hover, 
+.custom-tabs .nav > li > a:focus{
+	  background-color: #222;
+}
+.custom-tabs  .nav-tabs > li > a:hover{
+	border-color: #454545;
+}
+.custom-tabs  .nav-tabs > li > a {
+    color: #676767;
+    background-color: #222;
+	border:1px solid #454545;
+	margin-right:4px;
+}
+.full-width {
+	background-color: transparent;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+/*tabs styles ends here*/
+
+
+/*breadcrumb styles starts here*/
+ .breadcrumb.custom {
+    background: none;
+    float: right;
+    padding: 0;
+    margin-top: 8px;
+	margin-bottom: 8px;
+	font-size: 12px;
+}
+.breadcrumb.custom a {
+	color: #676767;
+}
+.breadcrumb.custom>li+li {  
+    padding: 0;  
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.breadcrumb.custom>li+li:before {
+    content: "\e258";
+	color: #676767;
+	font-size: 10px;
+	padding:  0 4px 0 0
+}
+.breadcrumb.custom .active{
+color:#dd7545
+}
+/*breadcrumb styles ends here*/
+
+.horiz-scroll-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.horiz-scroll-wrapper  .card {
+    display: inline-block;
+  }
+.horiz-scroll-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+ .horiz-scroll-wrapper .card {
+    flex: 0 0 auto;
+}
+.horiz-scroll-wrapper {
+  -webkit-overflow-scrolling: touch;
+}
+.horiz-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.horiz-scroll-wrapper select, select{
+border: 1px solid #454545;
+width:85px;
+border-radius:13px;
+padding:5px;
+background-color: #222222;
+}
+
+.arrow-color{
+	color:#6e6e6e;
+}
