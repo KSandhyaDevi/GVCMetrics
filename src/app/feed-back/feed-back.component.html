@@ -1,0 +1,41 @@
+<div class='popUpContainer'>
+  <div class="navbar-header">
+    <button type="button" class="btn btn-default no-btn popUpCloseBtn navbar-btn" aria-label="Left Align" [routerLink]="['.',{ outlets: { outlet: null} }]">
+      <span class="glyphicon glyphicon-arrow-left popUpCloseIconColor" aria-hidden="true"></span>
+    </button>
+  </div>
+  <div *ngIf="!success && !error">
+    <h4 class='gvcFdBackHeader'>
+      Hello Sandhya! How can we help?
+    </h4>
+    <div class='gvcFeedbackoptCon'>
+      <div *ngFor="let helpOpt of helpOptions">
+        <div class="helpOptPad">
+          <label class="radioBoxcontainer">{{helpOpt.name}}
+            <input type="radio" name='radioBtnGrp' (change)='setHelpOption(helpOpt)' value='helpOpt.key'>
+            <span class="radioDot"></span>
+          </label>
+        </div>
+      </div>
+      <div class='comment' [hidden]="!helpOption">
+        <textarea class='commentTxt' [placeholder]="placeHolderTxt" rows='10'></textarea>
+      </div>
+      <div [hidden]="!helpOption">
+        <button (click)='onSubmitFeedbackForm()' class=' feedbackSubmitBtnCenterAlgn btn btn-primary'>SUBMIT</button>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="success || error" class="container-fluid">
+    <div class="row-fluid">
+      <div>
+      
+    </div>
+      <div class="centering text-center">
+          <span class='succesCheckMark'></span>
+        <div>Your message is delivered!</div>
+        <div>We will look into it on priority.</div>
+        <button (click)="gotoBackPage()" class=' feedVackOkBtnMarTop btn btn-primary'>OK</button>
+      </div>
+    </div>
+  </div>
+</div>

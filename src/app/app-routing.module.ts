@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { ErrorComponent } from './error/error.component';
 import { HelpComponent } from './help/help.component';
+import { FeedBackComponent } from './feed-back/feed-back.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
@@ -23,6 +24,11 @@ const routes: Routes = [
   {
     path: 'help',
     component: HelpComponent,
+    outlet: 'outlet'
+  },
+  {
+    path: 'feedback',
+    component: FeedBackComponent,
     outlet: 'outlet'
   }
 ];

@@ -11,11 +11,11 @@
   <nav class="navbar navbar-default popUpHeader margin-bottom">
     <div class="menuBtnGrpMargin">
       <div class="menubtnLineAlgn">
-        <button type="button" class="btn btn-secondary  navbar-btn col-sm-3 col-xs-3" aria-label="Left Align" [routerLink]="['/login',{ outlets: { outlet: null} }]">
+        <button type="button" class="btn btn-secondary  navbar-btn col-sm-3 col-xs-3" aria-label="Left Align" (click)="goToLoginPage()">
           LOGOUT
         </button>
         <div class='col-sm-1 col-xs-1'></div>
-        <button type="button" class="btn btn-secondary  navbar-btn col-sm-4 col-xs-4" aria-label="center Align">
+        <button type="button" class="btn btn-secondary  navbar-btn col-sm-4 col-xs-4" aria-label="center Align" [routerLink]="['.',{ outlets: { outlet: ['feedback'] } }]" routerLinkActive="active">
           FEDDBACK
         </button>
         <div class='col-sm-1 col-xs-1'></div>
@@ -26,57 +26,44 @@
     </div>
   </nav>
   <div class='popUpContent menupopUpContent'>
-    <div class='menubtnLineAlgn gvcSubHeaderBg menudataRefCon'>
-      <div class='navbar-btn'>
-        <p class='navbar-btn fontBold'>Data Refresh</p>
-      </div>
-      <div class='navbar-btn '>
-        <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="true">
-            Dropdown
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li>
-              <a href="#">Action</a>
-            </li>
-            <li>
-              <a href="#">Another action</a>
-            </li>
-            <li>
-              <a href="#">Something else here</a>
-            </li>
-            <li role="separator" class="divider"></li>
-            <li>
-              <a href="#">Separated link</a>
-            </li>
-          </ul>
+    <form name="menuForm"  [formGroup]="gvcMetricsMenuOptions"
+      role="form" novalidate>
+      <div class='menubtnLineAlgn gvcSubHeaderBg menudataRefCon'>
+        <div class='navbar-btn'>
+          <p class='navbar-btn fontBold'>Data Refresh</p>
+        </div>
+        <div class='navbar-btn '>
+              <select class="form-control menuDpBgTrans" [disabled]='true' name='option' formControlName="dataRefreshInterwell">
+                <option value="">Please select a Interwell</option>
+                <option *ngFor="let opt of dataRefreshOptions"
+                        [value]="opt.key">{{opt.name}}
+                </option>
+              </select>
+        </div>
+        <div class='navbar-btn'>
+          <label class="switch navbar-btn">
+            <input type="checkbox" formControlName='dataRefresh' name='daterefresh'>
+            <span class="slider round borderColor"></span>
+          </label>
         </div>
       </div>
-      <div class='navbar-btn'>
-        <label class="switch navbar-btn">
-          <input type="checkbox">
-          <span class="slider round borderColor"></span>
-        </label>
-      </div>
-    </div>
-    <div class='metrMargin'>Metrics - Reorder, Toggle On / Off</div>
-    <div>
-      <ul class="list-group listCss">
-        <li class="listMenuItm row">
-          <div class="list-group-item listMenuGrpItm col-xs-10">
-            <label class="checkBoxcontainer  menucheckboxMarginLeft listMenuSubItm">One
-              <input type="checkbox" checked="checked">
-              <span class="checkmark"></span>
-            </label>
-          </div>
+      <div class='metrMargin'>Metrics - Reorder, Toggle On / Off</div>
+      <div>
+        <ul class="list-group listCss" formArrayName="menuOptionsListFromArray">
+          <li class="listMenuItm row" *ngFor="let list of menuOptionsListFromArray.controls; let i=index" [formGroupName]="i">
+            <div class="list-group-item listMenuGrpItm col-xs-10">
+              <label class="checkBoxcontainer  menucheckboxMarginLeft listMenuSubItm">{{list.value.name}}
+                <input type="checkbox" formControlName='checked'>
+                <span class="checkmark"></span>
+              </label>
+            </div>
 
-          <div class="list-group-item listMenuGrpItm col-xs-2">
-            <span class='glyphicon listMenuFontSize glyphicon-menu-hamburger listMenuSubItm'></span>
-          </div>
-        </li>
-      </ul>
-    </div>
+            <div class="list-group-item listMenuGrpItm col-xs-2">
+              <span class='glyphicon listMenuFontSize glyphicon-menu-hamburger listMenuSubItm'></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </form>
   </div>
 </div>

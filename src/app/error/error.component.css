@@ -1,0 +1,18 @@
+ 
+.container-fluid{
+    height:100%;
+    display:table;
+    width: 100%;
+    padding: 0;
+  }
+  .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+  .centering {
+    float:none;
+    margin:0 auto;
+  }
+  .errroHeader{
+      font-weight: bold;
+  }
+  .errorImgPading{
+      padding: 1rem 0;
+  }

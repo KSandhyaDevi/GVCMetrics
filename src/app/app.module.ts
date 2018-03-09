@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import {  ReactiveFormsModule,FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -12,6 +12,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { MenuComponent } from './menu/menu.component';
 import { ErrorComponent } from './error/error.component';
 import { HelpComponent } from './help/help.component';
+import { FeedBackComponent } from './feed-back/feed-back.component';
 
 
 @NgModule({
@@ -21,12 +22,15 @@ import { HelpComponent } from './help/help.component';
     HomeComponent,
     MenuComponent,
     ErrorComponent,
-    HelpComponent
+    HelpComponent,
+    FeedBackComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [GvcMetricsService],
   bootstrap: [AppComponent]
