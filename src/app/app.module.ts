@@ -13,6 +13,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ErrorComponent } from './error/error.component';
 import { HelpComponent } from './help/help.component';
 import { FeedBackComponent } from './feed-back/feed-back.component';
+import { DateComponentComponent } from './date-component/date-component.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { FeedBackComponent } from './feed-back/feed-back.component';
     MenuComponent,
     ErrorComponent,
     HelpComponent,
-    FeedBackComponent
+    FeedBackComponent,
+    DateComponentComponent
   ],
   imports: [
     BrowserModule,

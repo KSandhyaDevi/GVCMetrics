@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ErrorComponent } from './error/error.component';
 import { HelpComponent } from './help/help.component';
 import { FeedBackComponent } from './feed-back/feed-back.component';
+import { DateComponentComponent } from './date-component/date-component.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
@@ -29,6 +30,11 @@ const routes: Routes = [
   {
     path: 'feedback',
     component: FeedBackComponent,
+    outlet: 'outlet'
+  },
+  {
+    path: 'date',
+    component: DateComponentComponent,
     outlet: 'outlet'
   }
 ];

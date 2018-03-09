@@ -23,8 +23,12 @@ button, input, optgroup, select, textarea{
 		display:block;
 	}
 }
-
-
+.homeDateBtn{
+    border: 1px solid #3A3A3A !important;
+    border-radius: 13px;
+    margin: 5px;
+    padding: 3px 20px !important;
+}
 .navbar-custom .navbar-toggle{
 	border:0;
 	margin-right:0;

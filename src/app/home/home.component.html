@@ -11,9 +11,11 @@
           <span class="icon-bar"></span>
         </button>
         <span class="navbar-select-top">
-          <select>
-            <option>Today</option>
-          </select>
+          <button class='no-btn homeDateBtn' value='Today' [routerLink]="['/',{ outlets: { outlet: ['date'] } }]">
+            <!-- <option>Today</option> -->
+            Today
+            <span clas='glyphicon glyphicon-triangle-bottom'></span>
+          </button>
         </span>
         <a href="#" class="navbar-brand pull-right">
           <i class="glyphicon glyphicon-arrow-left arrow-color"></i>
