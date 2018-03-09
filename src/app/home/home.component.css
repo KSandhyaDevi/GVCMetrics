@@ -255,3 +255,126 @@ background-color: #222222;
 .arrow-color{
 	color:#6e6e6e;
 }
+
+
+.gvcImage{
+    width: 25px;
+    height: 25px;
+    background: url(../../assets/images/navbar-icons.png) 0 0;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-size: 25px;
+    position: relative;
+    top: 10px;
+}
+.sportsImage{
+    width: 25px;
+    height: 25px;
+    background: url(../../assets/images/navbar-icons.png) 0 -25px;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-size: 25px;
+    position: relative;
+    top: 10px;
+}
+.gamesImage{
+    width: 25px;
+    height: 25px;
+    background: url(../../assets/images/navbar-icons.png) 0 0;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: center;
+    background-size: 25px;
+    position: relative;
+    top: 10px;
+}
+.casinoImage{
+    width: 25px;
+    height: 25px;
+    background: url(../../assets/images/navbar-icons.png) 0 -76px;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-size: 25px;
+    position: relative;
+    top: 10px;
+}
+.errroImage{
+    width: 25px;
+    height: 25px;
+    background: url(../../assets/images/navbar-icons.png) 0 0;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: bottom;
+    background-size: 25px;
+    position: relative;
+    top: 10px;
+}
+.border-left{
+    border-left:1px solid;
+    border-left-color: #6E6E6E ;
+}
+.border{
+    border: 1px solid #6E6E6E
+}
+.border-right
+{
+    border-right:1px inset;
+    border-right-color: #6E6E6E ;
+}
+.border-bottom{
+    border-bottom:1px inset;
+    border-bottom-color: #6E6E6E !important;
+}
+.p-1{
+    padding: 0.25rem;
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+}
+.widthFullNoMargin{
+    width: 100%;
+    margin: 0 !important;
+}
+.resulCon{
+    margin: 1rem;
+}
+.p-0{
+    padding: 0 !important;
+}
+.graphHeight{
+    width: 95%;
+    height: 45px;
+}
+.graphMark{
+    width: 5%;
+    height: 45px;
+}
+.row1 {
+    width: 70%;
+    height: 20%;
+    background-color: #393939;
+}
+.row2 {
+    width: 85%;
+    height: 20%;
+    background-color: #656464;
+}
+.row3 {
+    width: 100%;
+    height: 20%;
+    background-color: #A3A2A2;
+}
+.graphFlex{
+    display: flex;
+}
+.col1{
+    height: 15%
+}
+.col2{
+    height: 70%;
+    border-left: 1px solid #CC6E43;
+    position: relative;
+    left: -420%;
+}
