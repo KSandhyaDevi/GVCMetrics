@@ -70,7 +70,7 @@ export class FeedBackComponent implements OnInit {
   }
 
   gotoBackPage(){
-    
+    window.history.back();
   }
 
 }

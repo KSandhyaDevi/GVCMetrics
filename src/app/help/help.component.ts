@@ -12,4 +12,8 @@ export class HelpComponent implements OnInit {
   ngOnInit() {
   }
 
+  gotoBackPage(){
+    window.history.back();
+  }
+
 }

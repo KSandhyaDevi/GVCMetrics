@@ -185,3 +185,73 @@ html, body, .gvcBgColor, .popUpContainer, .btn-secondary, input:checked + .slide
     transform: rotate(45deg);
 }
 /*rounded tick check box css ends*/
+
+
+  /*rounded tick radio css starts*/
+  .radioBoxcontainer {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio */
+.radioBoxcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio */
+.radioDot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #000000;
+    border-radius: 20px;
+    border-color: #6B6B6B;
+    border: 1px solid;
+}
+
+/* On mouse-over, add a grey background color */
+.radioBoxcontainer:hover input ~ .radioDot {
+    background-color: #000000;
+    border-color: #6B6B6B;
+    border: 1px solid;
+}
+
+/* When the checkbox is checked, add a blue background */
+.radioBoxcontainer input:checked ~ .radioDot {
+    background-color: #6B6B6B;
+    border-radius: 20px;
+}
+
+/* Create the radio/indicator (hidden when not checked) */
+.radioDot:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the radio when checked */
+.radioBoxcontainer input:checked ~ .radioDot:after {
+    display: block;
+}
+
+/* Style the radio/indicator */
+.radioBoxcontainer .radioDot:after {
+    left: 3px;
+    top: 2px;
+    border: solid white;
+    border-width: 6px;
+    border-radius: 6px;
+}
+/*rounded tick radio css ends*/

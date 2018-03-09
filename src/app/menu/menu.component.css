@@ -48,3 +48,11 @@
 .listMenuGrpItm .listMenuFontSize{
     font-size: 25px;;
 }
+.menuDpBgTrans{
+    background-color: transparent !important;
+    border-color: #313131;
+}
+.listMenuItm{
+    width: 100% !important;
+    margin: 0 !important;
+}
