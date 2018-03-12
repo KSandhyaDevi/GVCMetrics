@@ -110,3 +110,6 @@ body{overflow:hidden}
     border-radius: 6px;
 }
 /* custom RADIO button styles ends here */
+select option{
+    background-color: #222222 !important;
+}
