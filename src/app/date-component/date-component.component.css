@@ -1,3 +1,20 @@
 .dateComponent{
     padding: 1.5rem;
 }
+.dateComList{
+    margin: auto;
+}
+.dateComList:first-child{
+    margin-left: 0 !important;
+}
+.dateComList:last-child{
+    margin-right: 0 !important;
+}
+.dateComList button{
+    width:45px;
+}
+.datComDisplayFlex{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
