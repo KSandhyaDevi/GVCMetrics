@@ -1,58 +1,81 @@
-.menuBtnGrpMargin{
-    margin: 0 2rem;
+.refresh-container{
+	background:#222;
+	padding:15px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
-.menubtnLineAlgn{
-    display: flex;
-    justify-content: space-evenly;
+.refresh-text{
+	padding-top:5px;
+	padding-left:0;
+	text-align:right;
 }
-.menupopUpContent{
-    margin-top: 1rem;
-	color:#676767;
+label.switch{
+	margin-bottom:0;
+	top: 4px;
 }
-.menudataRefCon{
-    margin: 1rem;
-    border-radius: 5px;
+.reorder-items-container {
+	background-color:#090909;
+	position:relative;
 }
-.metrMargin{
-    margin: 1rem;
+.reorder-items-container ul {
+	margin:0;
+	padding:0;
+	list-style:none;
 }
-.listCss{
-    background-color: #090909;
+li.reorder-item {
+	position: relative;
+    display: block;
+    list-style: none;
+    border-bottom: 1px solid #353535;
+    border-top: 1px solid #353535;
+    margin-top: -1px;
+    padding: 15px 45px 15px 40px;
+    height: 50px;
+    box-sizing: border-box;
 }
-.listCss .listMenuItm{
-    border-color: #191919;
-    border-top: 1px solid !important;
+.reorder-item-text {
+	position:relative;
+	left: 5px;
 }
-.listMenuItm{
-    min-height: 40px;
+.reorder-items-container .checkBoxcontainer {
+    left: 30px;
+    position: absolute;
 }
-.menucheckboxMarginLeft{
-    margin-left: 10px;
+.reorder-items-container .checkmark{
+	width:30px;
+	height:30px;
+	top: -6px;
+    left: -14px;
 }
-.listMenuGrpItm:first-child, .listMenuGrpItm:last-child{
-    border-top-left-radius: 0px !important;
-    border-top-right-radius: 0px !important; 
-    border-bottom-right-radius: 0px !important; 
-    border-bottom-left-radius: 0px !important; 
+.reorder-items-container .checkBoxcontainer .checkmark:after{
+	left: 11px;
+    top: 8px;
+	border-width: 0 1.2px 1.2px 0;
 }
-.listCss .listMenuGrpItm{
-    border-bottom: 0 !important;
+.reorder-item-handle {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+	right:0;
+    height: 100%;
+    width: 4em;
+    -ms-touch-action: none;
+    touch-action: none;
+    cursor: pointer;
+    cursor: -webkit-grab;
+    cursor: grab;
 }
-.listMenuItm .listMenuGrpItm:first-child{
-    border: 0 !important;
+.reorder-item-handle-body{
+	position: absolute;
+    top: 25%;
+    padding: 5px 0;
+    border-left: 1px solid #353535;
 }
-.listMenuItm .listMenuGrpItm:last-child{
-    border: 0 !important;
-    border-left: 1px solid #191919 !important;
-}
-.listMenuGrpItm .listMenuFontSize{
-    font-size: 25px;;
-}
-.menuDpBgTrans{
-    background-color: transparent !important;
-    border-color: #313131;
-}
-.listMenuItm{
-    width: 100% !important;
-    margin: 0 !important;
+.handle-bar {
+    position: relative;
+    height: 2px;
+	margin: 2px 1.1em;
+	background: #6b6b6b;
+	display:block;
+	width:20px;
 }

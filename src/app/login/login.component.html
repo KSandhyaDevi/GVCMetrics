@@ -1,40 +1,23 @@
-<div class='h-100'>
-  <ul class="nav navbar navbar-dark bg-light mb-0">
-    <li class="nav-item">
-      <button class="btn btn-secondary">
-        <span class="">TODO</span>
-      </button>
-    </li>
-    <li class="nav-item"><h3>Realtime BI</h3></li>
-    </ul>
-  <form class='loginFormWidth loginFormCenter'>
-    <div class="form-row align-items-center">
 
-      <div class="col-12 mb-3 col-lg-7 col-md-7  ml-auto mr-auto">
-        <label class="sr-only" for="inlineFormInputGroup">Email Id</label>
-        <div class="input-group mb-2 border-bottom">
-          <div class="input-group-prepend selfAlignCenter">
-            <div class="input-group-text border-0  bg-none pl-0">
-              <i class="fa fa-caret-square-o-down"></i>
-            </div>
-          </div>
-          <input type="text" class="form-control border-0 no-focus bg-none" id="inlineFormInputGroup" placeholder="Email Id">
-        </div>
-      </div>
-      <div class="col-12 mb-3 col-lg-7 col-md-7 ml-auto mr-auto">
-        <label class="sr-only" for="inlineFormPwdGroup">Password</label>
-        <div class="input-group mb-2 border-bottom">
-          <div class="input-group-prepend selfAlignCenter">
-            <div class="input-group-text border-0  bg-none pl-0">
-              <i class="fa fa-lock" aria-hidden="true"></i>
-            </div>
-          </div>
-          <input type="password" class="form-control border-0 no-focus bg-none" id="inlineFormPwdGroup" placeholder="Password">
-        </div>
-      </div>
-      <div class="col-12 col-lg-7 col-md-7 ml-auto mr-auto">
-        <button type="submit" class="btn btn-primary mb-2 w-100" [routerLink]="['/home']">LOGIN</button>
-      </div>
-    </div>
-  </form>
+<div class="login-box">
+		<div class="login-logo-container">
+			<span class="logo-body"></span>Realtime BI
+		</div>
+	<div class="login-body">
+							
+
+		<div class="login-input-box">
+			<input class="login-input" type="text" placeholder="sandeept@ivycomptech.com">
+			<span class="login-input-focus"></span>
+		</div>
+
+		<div class="login-input-box">
+			<input class="login-input" type="password" value="muralimohan">
+			<span class="login-input-focus icon-pwd"></span>
+		</div>
+						
+		<div class="mt">
+			<button class='btn btn-primary btn-block' [routerLink]="['/home']">LOGIN</button>
+		</div>
+	</div>
 </div>

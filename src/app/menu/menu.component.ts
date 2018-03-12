@@ -1,5 +1,5 @@
 import { Component, OnInit, HostBinding, ViewEncapsulation } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, ViewEncapsulation } from '@angular/router';
 import {
   ReactiveFormsModule,
   FormsModule,
@@ -13,7 +13,7 @@ import {
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css'],
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.None
 })
 export class MenuComponent implements OnInit {
   gvcMetricsMenuOptions: FormGroup;
@@ -25,14 +25,14 @@ export class MenuComponent implements OnInit {
   ) {
     this.dataRefreshOptions = [{ name: '5min', key: 5 }, { name: '15min', key: 15 }, { name: '30min', key: 30 }, { name: '1Hr', key: 1 }];
     this.menuOptionsList = [{ name: 'Title', key: '0', checked:false },
-    { name: 'GGR &#8364', key: '1', checked:true },
+    { name: 'GGR', key: '1', checked:true },
     { name: 'GGR Margin', key: '2', checked:true },
-    { name: 'NGR &#8364;', key: '3', checked:true },
-    { name: 'NB Cost &#8364;', key: '4', checked:true },
-    { name: 'NB & Lty Cost &#8364;', key: '5', checked:true },
+    { name: 'NGR', key: '3', checked:true },
+    { name: 'NB Cost', key: '4', checked:true },
+    { name: 'NB & Lty Cost ', key: '5', checked:true },
     { name: 'NB & Lty Rate', key: '6', checked:true },
-    { name: 'Other Revenue &#8364;', key: '7', checked:true },
-    { name: 'Deposit AMt &#8364;', key: '8', checked:true },
+    { name: 'Other Revenue', key: '7', checked:true },
+    { name: 'Deposit AMt', key: '8', checked:true },
     ]
     this.gvcMetricsMenuOptions =  this.fb.group({
       dataRefreshInterwell: '5',

@@ -1,119 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-/*global back ground color is #000000*/
-html, body, .gvcBgColor, .popUpContainer, .btn-secondary, input:checked + .slider{
-    background-color: #000000;
-    font-size: 12px;
-}
+body{overflow:hidden}
+/* custom CHECKBOX button styles starts here */
 
-.gvcSubHeaderBg, .popUpHeader,.btn-primary{
-    background-color: #222222 !important;
-    border-color: #222222 !important;
-}
-.borderColor, .btn-primary{
-    border-color:#4F4F4F !important; 
-}
-.list-group .list-group-item{
-    background-color: #090909 !important;
-}
-.popUpCloseIconColor{
-    color: #676666;
-    font-size: 28px;
-    padding: 0;
-}
-.popUpCloseBtn{
-    float: right;
-}
-.popUpContainer{
-    position: absolute;
-    top: 0;
-    z-index: 99999;
-    width: 100%;
-    height: 100%;
-}
-.popUpHeader{
-    height: 5.5rem;
-    min-height: 5.5rem !important;
-}
-.margin-bottom{
-    margin-bottom: 0 !important;
-}
-.no-btn{
-    background: none !important;
-    border: none !important;
-    padding: 0 !important;
-    margin-right: 1rem;
-}
-.btn-secondary{
-    color: #555555;
-}
-.btn-primary{
-    color: #4F4F4F !important;
-}
-.btn{
-    font-size: 12px !important;
-    font-weight: bold !important;
-}
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #696969;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 35px;
-    height: 20px;
-  }
-  
-  .switch input {display:none;}
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 18px;
-    width: 18px;
-    left: 1px;
-    bottom: 1px;
-    background-color: transparent;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider:before{
-    background-color: #696969;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #6B6B6B;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(14px);
-    -ms-transform: translateX(14px);
-    transform: translateX(14px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-    border: 1px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-    border: 1px solid;
-    border-color:#4F4F4F !important; 
-  }
-  .fontBold{
-      font-weight: bold;
-  }
-
-  /*rounded tick check box css starts*/
   .checkBoxcontainer {
     display: block;
     position: relative;
@@ -126,15 +13,11 @@ html, body, .gvcBgColor, .popUpContainer, .btn-secondary, input:checked + .slide
     -ms-user-select: none;
     user-select: none;
 }
-
-/* Hide the browser's default checkbox */
 .checkBoxcontainer input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
-
-/* Create a custom checkbox */
 .checkmark {
     position: absolute;
     top: 0;
@@ -143,36 +26,26 @@ html, body, .gvcBgColor, .popUpContainer, .btn-secondary, input:checked + .slide
     width: 20px;
     background-color: #000000;
     border-radius: 20px;
-    border-color: #6B6B6B;
+    border-color: #6b6b6b;
     border: 1px solid;
 }
-
-/* On mouse-over, add a grey background color */
 .checkBoxcontainer:hover input ~ .checkmark {
     background-color: #000000;
-    border-color: #6B6B6B;
+    border-color: #6b6b6b;
     border: 1px solid;
 }
-
-/* When the checkbox is checked, add a blue background */
 .checkBoxcontainer input:checked ~ .checkmark {
-    background-color: #6B6B6B;
+    background-color: #6b6b6b;
     border-radius: 20px;
 }
-
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
-
-/* Show the checkmark when checked */
 .checkBoxcontainer input:checked ~ .checkmark:after {
     display: block;
 }
-
-/* Style the checkmark/indicator */
 .checkBoxcontainer .checkmark:after {
     left: 6px;
     top: 2px;
@@ -184,74 +57,56 @@ html, body, .gvcBgColor, .popUpContainer, .btn-secondary, input:checked + .slide
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-/*rounded tick check box css ends*/
+/* custom CHECKBOX button styles ends here */
 
 
-  /*rounded tick radio css starts*/
-  .radioBoxcontainer {
+/* custom RADIO button styles starts here */
+.radioBoxcontainer {
     display: block;
     position: relative;
-    padding-left: 25px;
+    padding-left: 40px;
     margin-bottom: 0;
     cursor: pointer;
-    font-size: 12px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
-
-/* Hide the browser's default radio */
 .radioBoxcontainer input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
-
-/* Create a custom radio */
 .radioDot {
     position: absolute;
     top: 0;
     left: 0;
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     background-color: #000000;
-    border-radius: 20px;
-    border-color: #6B6B6B;
-    border: 1px solid;
+    border: 1px solid #6b6b6b;
+    border-radius: 50%;
 }
-
-/* On mouse-over, add a grey background color */
 .radioBoxcontainer:hover input ~ .radioDot {
     background-color: #000000;
-    border-color: #6B6B6B;
-    border: 1px solid;
+    border: 1px solid #6b6b6b;
 }
-
-/* When the checkbox is checked, add a blue background */
 .radioBoxcontainer input:checked ~ .radioDot {
-    background-color: #6B6B6B;
-    border-radius: 20px;
+    background-color: #6b6b6b;
+    border-radius: 30px;
 }
-
-/* Create the radio/indicator (hidden when not checked) */
 .radioDot:after {
     content: "";
     position: absolute;
     display: none;
 }
-
-/* Show the radio when checked */
 .radioBoxcontainer input:checked ~ .radioDot:after {
     display: block;
 }
-
-/* Style the radio/indicator */
 .radioBoxcontainer .radioDot:after {
-    left: 3px;
-    top: 2px;
-    border: solid white;
-    border-width: 6px;
+    left: 8px;
+    top: 8px;
+    border: 6px solid #b7b7b7;
     border-radius: 6px;
 }
-/*rounded tick radio css ends*/
+/* custom RADIO button styles ends here */
