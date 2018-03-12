@@ -370,6 +370,7 @@ table.product-results th.bar-table-cell{
     position: absolute;
     top: 0;
     left: 20%;
+	z-index:4;
 }
 .vert-line {
     height: 70%;
@@ -378,28 +379,28 @@ table.product-results th.bar-table-cell{
     width: 2px;
     background-color: #CC6E43;
 }
-.bar {
-    height: 20%;   
-}
-.shade-1{
+.bar-shade-1{
 	background-color: #393939;
 	width: 70%;	
+	position:absolute;
+	z-index:1;
+	height:100%
 }
-.shade-2{
+.bar-shade-2{
 	background-color: #656464;
-	width: 85%;
+	width: 80%;
+	position:absolute;
+	z-index:2;
+	height:60%;
+	top:9px;
 }
-.shade-3{
+.bar-shade-3{
 	background-color: #A3A2A2;
-	width: 100%;
-}
-.shade-4{
-	background-color: #615f5f;
-	width: 85%;
-}
-.shade-5{
-	background-color: #3d3d3d;
-	width: 70%;
+	width: 90%;
+	position:absolute;
+	z-index:3;
+	height:20%;
+	top:18px;
 }
 
 /* graph table ends here */
