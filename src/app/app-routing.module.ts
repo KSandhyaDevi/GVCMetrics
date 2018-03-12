@@ -11,6 +11,7 @@ import { DateComponentComponent } from './date-component/date-component.componen
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  { path: 'home/:id', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   {
     path: 'menu',

@@ -24,16 +24,16 @@
   </div>
 
   <div class="navbar-icons">
-    <a href="javascript:;" class="navbar-item active">
+    <a href="javascript:;" class="navbar-item" [ngClass]="{'':'active'}[pageType]" [routerLink]="['/home']">
       <i class="icon-product gvc"></i>
     </a>
-    <a href="javascript:;" class="navbar-item">
+    <a href="javascript:;" class="navbar-item" [ngClass]="{'bwin':'active'}[pageType]" [routerLink]="['/home/bwin']">
       <i class="icon-product bwin"></i>
     </a>
-    <a href="javascript:;" class="navbar-item">
+    <a href="javascript:;" class="navbar-item" [ngClass]="{'casino':'active'}[pageType]" [routerLink]="['/home/casino']">
       <i class="icon-product casino"></i>
     </a>
-    <a href="javascript:;" class="navbar-item">
+    <a href="javascript:;" class="navbar-item" [ngClass]="{'poker':'active'}[pageType]" [routerLink]="['/home/poker']">
       <i class="icon-product poker"></i>
     </a>
     <a href="javascript:;" class="navbar-item" [routerLink]="['/',{ outlets: { outlet: ['error'] } }]">
