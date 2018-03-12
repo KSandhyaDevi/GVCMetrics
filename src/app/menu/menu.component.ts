@@ -1,5 +1,5 @@
 import { Component, OnInit, HostBinding, ViewEncapsulation } from '@angular/core';
-import { ActivatedRoute, Router, ViewEncapsulation } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import {
   ReactiveFormsModule,
   FormsModule,
