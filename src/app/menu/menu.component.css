@@ -16,6 +16,7 @@ label.switch{
 .reorder-items-container {
 	background-color:#090909;
 	position:relative;
+	font-size:14px;
 }
 .reorder-items-container ul {
 	margin:0;
@@ -36,6 +37,7 @@ li.reorder-item {
 .reorder-item-text {
 	position:relative;
 	left: 5px;
+	font-weight: normal;
 }
 .reorder-items-container .checkBoxcontainer {
     left: 30px;

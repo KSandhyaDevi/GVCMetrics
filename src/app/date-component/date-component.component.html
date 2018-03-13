@@ -1,9 +1,18 @@
 <div class='popUpContainer'>
-  <div class="navbar-header">
-    <button type="button" class="btn btn-default no-btn popUpCloseBtn navbar-btn" aria-label="Left Align" (click)="gotoBackPage()">
-      <span class="glyphicon glyphicon-arrow-left popUpCloseIconColor" aria-hidden="true"></span>
-    </button>
+
+
+
+  <div class="navbar-custom popup-top-fix1">
+    <nav class="navbar navbar-static-top">
+      <div class="navbar-header text-center">   
+        <button type="button" class="btn btn-default no-btn popUpCloseBtn navbar-btn" aria-label="Left Align" (click)="gotoBackPage()">
+			<span class="navbar-brand pull-right"><i class="glyphicon glyphicon-arrow-left arrow-color"></i></span>
+		</button>
+      </div>     
+    </nav>
   </div>
+
+  <div class='flex'>
   <div class='popUpContent dateComponent'>
     <div>
       <span>
@@ -55,5 +64,9 @@
       </div>
     </div>
   </div>
+
+
   <div id="datetimepicker"></div>
+
+</div>
 </div>

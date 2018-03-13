@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import {
   ReactiveFormsModule,
@@ -12,7 +12,8 @@ import {
 @Component({
   selector: 'app-feed-back',
   templateUrl: './feed-back.component.html',
-  styleUrls: ['./feed-back.component.css']
+  styleUrls: ['./feed-back.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class FeedBackComponent implements OnInit {
   gvcMetricsFeedBacForm: FormGroup;

@@ -1,6 +1,5 @@
 html, body, .gvcBgColor, .popUpContainer, input:checked + .slider{
     background-color: #000000;
-    font-size: 12px;
 }
 .page-wrapper{
 	margin-bottom:15px;
