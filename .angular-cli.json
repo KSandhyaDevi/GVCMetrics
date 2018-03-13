@@ -25,8 +25,7 @@
       "scripts": [
         "../node_modules/jquery/jquery.min.js",
         "../node_modules/bootstrap/dist/js/bootstrap.js",
-        "../src/assets/lib/datepicker/js/bootstrap-datepicker.js",
-        "../src/assets/lib/sortable/jquery-sortable.js"
+        "../src/assets/lib/datepicker/js/bootstrap-datepicker.js"
         ],
       "environmentSource": "environments/environment.ts",
       "environments": {
