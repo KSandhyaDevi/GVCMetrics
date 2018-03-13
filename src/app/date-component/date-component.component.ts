@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-
+import * as $ from 'jquery';
 @Component({
   selector: 'app-date-component',
   templateUrl: './date-component.component.html',
