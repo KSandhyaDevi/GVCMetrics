@@ -18,3 +18,46 @@
     justify-content: space-between;
     padding: 1rem 0;
 }
+.datedp{
+    border-radius: 4px !important;
+    height: 33px;
+    width: 100px;
+    clear: both;
+    float: right;
+}
+.clear{
+    clear: both;
+    padding-top: 1rem;
+}
+.table-condensed thead tr:last-child th{
+    text-align: center;
+}
+.table-condensed thead tr:nth-child(2){
+    height: 45px;
+    font-size: 15px;
+}
+.table-condensed thead tr:nth-child(2) th{
+    text-align: center;
+}
+.new, .old, .table-condensed thead tr:last-child {
+    background-color: #111111 !important;
+    border: none !important;
+}
+td.day {
+    border: 1px solid #0B0B0B;
+    text-align: center;
+}
+.table-condensed{
+    width: 100%;
+}
+.datepicker table tr td span {
+    display: block;
+    width: 23%;
+    height: 54px;
+    line-height: 54px;
+    float: left;
+    margin: 1%;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+}

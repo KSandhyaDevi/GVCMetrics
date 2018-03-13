@@ -11,18 +11,49 @@
         Date Presents
       </span>
       <ul class="nav nav-pills datComDisplayFlex">
-          <li class='dateComList'><button class='btn btn-primary'>D</button></li>
-          <li class='dateComList'><button class='btn btn-primary'>W</button></li>
-          <li class='dateComList'><button class='btn btn-primary'>M</button></li>
-          <li class='dateComList'><button class='btn btn-primary'>Q</button></li>
-          <li class='dateComList'><button class='btn btn-primary'>Y</button></li>
-        </ul>
-        <div class="input-group date">
+        <li class='dateComList'>
+          <button class='btn btn-primary'>D</button>
+        </li>
+        <li class='dateComList'>
+          <button class='btn btn-primary'>W</button>
+        </li>
+        <li class='dateComList'>
+          <button class='btn btn-primary'>M</button>
+        </li>
+        <li class='dateComList'>
+          <button class='btn btn-primary'>Q</button>
+        </li>
+        <li class='dateComList'>
+          <button class='btn btn-primary'>Y</button>
+        </li>
+      </ul>
+      <select class='datedp' value='Today' [routerLink]="['/',{ outlets: { outlet: ['date'] } }]">
+        <option>Yesterday</option>
+        <option>Q1</option>
+      </select>
+      <br>
+      <br>
+      <div class='clear'>
+        <span>
+          <span class='glyphicon glyphicon-calendar'></span>
+          Dates
+        </span>
+        <div class='datComDisplayFlex'>
+          <div class="input-group date col-xs-5">
             <input type="text" class="form-control" value="12-02-2012">
             <div class="input-group-addon">
-                <span class="glyphicon glyphicon-th"></span>
+              <span class="glyphicon glyphicon-chevron-down"></span>
             </div>
+          </div>
+          <div class="input-group date col-xs-5">
+            <input type="text" class="form-control" value="12-02-2012">
+            <div class="input-group-addon">
+              <span class="glyphicon glyphicon-chevron-down"></span>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
   </div>
+  <div id="datetimepicker"></div>
 </div>
